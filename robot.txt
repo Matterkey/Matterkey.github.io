@@ -1,0 +1,3 @@
+#no baidu
+User-agent: Baiduspider
+Disallow: /
