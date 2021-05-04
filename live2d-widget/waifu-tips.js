@@ -105,14 +105,14 @@ function loadWidget(config) {
 		let text;
 		if (location.pathname === "/") { // 如果是主页
 			const now = new Date().getHours();
-			if (now > 5 && now <= 7) text = "早上好！一日之计在于晨，美好的一天就要开始了。";
+			if (now > 5 && now <= 7) text = "哥哥姐姐，2000人民币和3000美元哪个更多呀？";
 			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
-			else if (now > 11 && now <= 13) text = "中午了，工作了一个上午，现在是午餐时间！";
-			else if (now > 13 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
-			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
-			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
-			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安～", "深夜时要爱护眼睛呀！"];
-			else text = "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？";
+			else if (now > 11 && now <= 13) text = "双赢就是赢两次！";
+			else if (now > 13 && now <= 17) text = "这，就是中国！";
+			else if (now > 17 && now <= 19) text = "根据约翰霍普金斯大学统计......";
+			else if (now > 19 && now <= 21) text = "要警惕站主打马克思牌！";
+			else if (now > 21 && now <= 23) text = ["本年年度关键字：赢！", "我看啊，责任全在美方！！"];
+			else text = "不敢高声语，恐惊天上人";
 		} else if (document.referrer !== "") {
 			const referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];
