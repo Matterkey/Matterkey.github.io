@@ -91,8 +91,7 @@ function loadWidget(config) {
 		const devtools = () => {};
 		console.log("%c", devtools);
 		devtools.toString = () => {
-			showMessage("哈哈，就是打开控制台，也看不到我的小秘密哦？", 6000, 9);
-			showMessage("警察叔叔，就是那个大变态！", 6000, 9);
+			showMessage(randomSelection(["哈哈，就是打开控制台，也看不到我的小秘密哦!","警察叔叔，就是那个大变态！"]), 6000, 9);
 		};
 		window.addEventListener("copy", () => {
 			showMessage("你都复制了些什么呀，转载最好还是加上出处哦！", 6000, 9);
