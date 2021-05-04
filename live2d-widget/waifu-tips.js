@@ -91,7 +91,7 @@ function loadWidget(config) {
 		const devtools = () => {};
 		console.log("%c", devtools);
 		devtools.toString = () => {
-			showMessage(randomSelection(["哈哈，就是打开控制台，也看不到我的小秘密哦!","警察叔叔，就是那个大变态！"]), 6000, 9);
+			showMessage(randomSelection(["哈哈，就算打开控制台，也看不到我的小秘密哦!","警察叔叔，就是那个大变态！"]), 6000, 9);
 		};
 		window.addEventListener("copy", () => {
 			showMessage("你都复制了些什么呀，转载最好还是加上出处哦！", 6000, 9);
@@ -162,7 +162,7 @@ function loadWidget(config) {
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
-			modelId = 1; // 模型 ID
+			modelId = 3; // 模型 ID
 			modelTexturesId = 53; // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
