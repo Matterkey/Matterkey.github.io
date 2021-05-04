@@ -42,7 +42,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！", "记得把小家加入 Adblock 白名单哦！"];
+		messageArray = ["好久不见，日子过得好快呢……", "大笨蛋！你都多久没理人家了呀，嘤嘤嘤～", "嗨嗨嗨～快来逗我玩吧！", "呜呜呜，人家拿小拳拳锤你胸口！", "怎么不理我了啊～"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -91,13 +91,14 @@ function loadWidget(config) {
 		const devtools = () => {};
 		console.log("%c", devtools);
 		devtools.toString = () => {
-			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
+			showMessage("哈哈，就是打开控制台，也看不到我的小秘密哦？", 6000, 9);
+			showMessage("警察叔叔，就是那个大变态！", 6000, 9);
 		};
 		window.addEventListener("copy", () => {
-			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
+			showMessage("你都复制了些什么呀，转载最好还是加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+			if (!document.hidden) showMessage("哇呜，你终于回来了～", 6000, 9);
 		});
 	})();
 
