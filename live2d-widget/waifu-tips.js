@@ -106,7 +106,7 @@ function loadWidget(config) {
 		if (location.pathname === "/") { // 如果是主页
 			const now = new Date().getHours();
 			if (now > 5 && now <= 7) text = "哥哥姐姐，2000人民币和3000美元哪个更多呀？";
-			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
+			else if (now > 7 && now <= 11) text = "上午好！主人应该还没起床呢！";
 			else if (now > 11 && now <= 13) text = "双赢就是赢两次！";
 			else if (now > 13 && now <= 17) text = "这，就是中国！";
 			else if (now > 17 && now <= 19) text = "根据约翰霍普金斯大学统计......";
